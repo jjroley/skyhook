@@ -47,6 +47,7 @@ class Ball {
     const armLength = dist(this.x, this.y, this.anchor.x, this.anchor.y)
     const theta = -1 * atan2(this.anchor.y - this.y, this.anchor.x - this.x) - 90
     const newAngle = 
+    
     [0,2].map(n => n * sin(theta) * GRAVITY)
     
     this.velX += sin(theta) * GRAVITY
